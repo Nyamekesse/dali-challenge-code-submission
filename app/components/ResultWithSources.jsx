@@ -66,7 +66,6 @@ const ResultWithSources = ({ messages, pngFile, maxMsgs }) => {
     }
   }, [messages]);
 
-  // E.g. Before we reach the max messages, we should add the justify-end property, which pushes messages to the bottom
   const maxMsgToScroll = maxMsgs || 5;
 
   return (
