@@ -8,9 +8,7 @@ import Title from "../components/Title";
 import TwoColumnLayout from "../components/TwoColumnLayout";
 
 const VideoChat = () => {
-  const [prompt, setPrompt] = useState(
-    "https://www.youtube.com/watch?v=0lJKucu6HJc"
-  );
+  const [prompt, setPrompt] = useState("");
   const [error, setError] = useState(null);
   const [firstMsg, setFirstMsg] = useState(true);
 
@@ -26,6 +24,7 @@ const VideoChat = () => {
   };
 
   const handleSubmit = async () => {
+    if (!prompt) return alert("Enter a valid Youtube url");
     try {
       setMessages((prevMessages) => [
         ...prevMessages,
