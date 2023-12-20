@@ -52,12 +52,12 @@ This section displays some of the screens of the project:
 
 - ### Shot 1
 
-![screenshot 1]()
+![screenshot 1](<https://github.com/Nyamekesse/dali-challenge-code-submission/blob/main/screenshots/Screenshot%20(512).png>)
 
 - ### Shot 2
 
-![screenshot 1]()
+![screenshot 1](<https://github.com/Nyamekesse/dali-challenge-code-submission/blob/main/screenshots/Screenshot%20(513).png>)
 
 - ### Shot 3
 
-  ![screenshot 1]()
+  ![screenshot 1](<https://github.com/Nyamekesse/dali-challenge-code-submission/blob/main/screenshots/Screenshot%20(514).png>)
