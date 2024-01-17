@@ -31,13 +31,17 @@ const VideoChat = () => {
         { text: prompt, type: "user", sourceDocuments: null },
       ]);
 
-      const response = await fetch(`/api/video-chat`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        `/api/video-chat`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ prompt: prompt, firstMsg }),
         },
-        body: JSON.stringify({ prompt: prompt, firstMsg }),
-      });
+        setPrompt("")
+      );
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
