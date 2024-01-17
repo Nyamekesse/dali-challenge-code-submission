@@ -48,7 +48,7 @@ const VideoChat = () => {
       setMessages((prevMessages) => [
         ...prevMessages,
         {
-          text: searchRes.output.text,
+          text: searchRes.output?.text,
           type: "bot",
         },
       ]);
